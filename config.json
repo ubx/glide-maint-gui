@@ -1,0 +1,21 @@
+{
+  "xcsoar": {
+    "run": [
+      "/home/andreas/ClionProjects/XCSoar/output/UNIX/bin/xcsoar",
+      "-fly",
+      "-datapath=/home/andreas/.xcsoar/",
+      "-profile=default.prf"
+    ]
+  },
+  "can.viewer": {
+    "run": [
+      "python",
+      "-m",
+      "can.viewer"
+    ]
+  },
+  "canbus": {
+    "channel": "vcan0",
+    "interface": "socketcan"
+  }
+}
