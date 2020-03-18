@@ -44,7 +44,7 @@ def run_program(key):
     if key is XCSOAR:
         subprocess.call(config[XCSOAR]['run'])
     elif key is CAN_VIEWER:
-        subprocess.call(
+        subprocess.run(
             config[CAN_VIEWER]['run'] + ['-i'] + [config['canbus']['interface']]
             + ['-c'] + [config['canbus']['channel']])
 
